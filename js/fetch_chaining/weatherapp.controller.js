@@ -1,5 +1,4 @@
 import { getWeatherData } from "./weatherapp.model.js";
-
 /**
  * Kalder fetch modellen med then/catch chaining
  */
