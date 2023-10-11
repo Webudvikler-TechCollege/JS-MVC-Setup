@@ -1,10 +1,12 @@
-import { getWeatherData } from "./weatherapp.model.js";
+import { weatherModel } from "./weatherapp.model.js";
+import { weatherView } from "./weatherapp.view.js";
+
 /**
  * Kalder fetch modellen med then/catch chaining
  */
-getWeatherData()
+weatherModel()
 	.then(data => {
-		console.log(data);
+		weatherView(data);
 	}).catch(error => {
 		console.error(error);
 	})
